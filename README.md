@@ -17,7 +17,7 @@ operatiuni. Am folosit resurse din laboratorul 9, pe care l-am folosit drept sch
 - adaugarea unei carti : necesita introducerea detaliilor cartii. Dupa validarea acestor date, trimitem o cerere POST cu aceste informatii in format JSON, impreuna cu cookie-ul si token-ul. Daca serverul confirma adaugarea cu succes a cartii, utilizatorul primeste un mesaj de succes.
 - stergerea unei carti : specificarea ID-ului cartii si trimiterea unei cereri DELETE catre server. Daca stergerea este reusita, utilizatorul primeste un mesaj de confirmare.
 - delogarea user-ului : se face prin trimiterea unei cereri GET cu cookie-ul de sesiune catre server. Daca delogarea este reusita, utilizatorul primeste un mesaj de confirmare si cookie-ul de sesiune este invalidat.
-- comanda "exit" : nchide conexiunea cu serverul si elibereaza memoria alocata pentru cookie si token, daca acestea exista.
+- comanda "exit" : inchide conexiunea cu serverul si elibereaza memoria alocata pentru cookie si token, daca acestea exista.
 
   Pentru parsarea si gestionarea datelor in format JSON, am ales sa
 folosesc biblioteca parson. Aceasta biblioteca este simpla si usor de
